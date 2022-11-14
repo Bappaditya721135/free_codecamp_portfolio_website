@@ -39,6 +39,28 @@
     font-weight: 500;
 }
 
+/* This is the about section  */
+#about{
+    background: linear-gradient(62deg, #3a3d40, #181719);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 2.2rem;
+    line-height: 1.5;
+}
+
+#about>h1{
+    color: white;
+}
+
+#about>p{
+    font-weight: 100;
+    font-style: italic;
+    color: #be3144;
+}
+
 /* Responsive design for mobile  */
 @media(max-width: 375px){
     .nav-bar>.nav-menu{
