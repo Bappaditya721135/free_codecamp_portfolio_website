@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+/* This code is for nav-bar  */
+.nav-bar{
+    position: fixed;
+    background-color: hsl(352, 59%, 47%);
+    min-height: 70px;
+    width: 100vw;
+    padding-inline: 30px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-bar>.nav-menu{
+    display: flex;
+}
+
+.nav-bar>.nav-menu>li{
+    display: flex;
+    align-items: center;
+    padding-inline: 20px;
+}
+
+/* Nav element hover effect */
+.nav-bar>.nav-menu>li:hover{
+    background-color: hsl(222, 29%, 38%);
+}
+
+.nav-bar>.nav-menu>li>a{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+/* Responsive design for mobile  */
+@media(max-width: 375px){
+    .nav-bar>.nav-menu{
+        flex-direction: column;
+    }
+    .nav-bar{
+        justify-content: center;
+    }
+    .nav-bar>.nav-menu>li{
+        padding: 10px 15px;
+        text-align: center;
+        display: block;
+    }
+}
