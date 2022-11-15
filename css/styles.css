@@ -8,6 +8,7 @@
 }
 
 /* This code is for nav-bar  */
+
 .nav-bar{
     position: fixed;
     background-color: hsl(352, 59%, 47%);
@@ -40,6 +41,7 @@
 }
 
 /* This is the about section  */
+
 #about{
     background: linear-gradient(62deg, #3a3d40, #181719);
     min-height: 100vh;
@@ -61,6 +63,79 @@
     color: #be3144;
 }
 
+/* This code is for work section  */
+
+#work{
+    min-height: 100vh;
+    background-color: hsl(222, 29%, 38%);
+    padding: 100px 20px;
+    text-align: center;
+}
+
+#work>h2{
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+    border-bottom: 2px solid white;
+    display: inline;
+    padding-bottom: 5px;
+}
+
+#work>.project-container{
+    max-width: 1280px;
+    display: grid;
+    margin: 60px auto;
+    grid-gap: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+#work>.project-container>a{
+    min-width: 350px;
+    min-height: 400px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-color: gray;
+    color: white;
+}
+
+#work>.project-container>a>p{
+    padding: 20px 5px;
+    background-color: hsl(212, 15%, 22%);
+    width: 100%;
+    font-size: 1.5rem;
+}
+
+.project>p>span{
+    color: hsl(212, 15%, 22%);
+    transition: .3s;
+}
+
+.project:hover>p>span{
+    color: hsl(16, 100%, 66%);
+}
+#work>button{
+    font-size: 1.5rem;
+    background-color: hsl(212, 15%, 22%);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    transition: .4s background-color;
+}
+
+#work>button:hover{
+    background-color: hsl(352, 59%, 47%);
+}
+
+.show-all-btn>.button-span{
+    font-weight: 900;
+    /* transition: 2s; */
+}
+
+.show-all-btn:hover>.button-span{
+    position: relative;
+    left: 3px;
+}
 /* Responsive design for mobile  */
 @media(max-width: 375px){
     .nav-bar>.nav-menu{
