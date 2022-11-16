@@ -136,6 +136,45 @@
     position: relative;
     left: 3px;
 }
+
+/* This code is for contact section  */
+
+#contact{
+    min-height: 80vh;
+    background-color: hsl(212, 15%, 22%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact>h2{
+    font-size: 3.5rem;
+}
+
+#contact>p{
+    /* font-weight: 100; */
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+#contact>ul{
+    margin-top: 3rem;
+    font-size: 1.5rem;
+}
+.contact-links{
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    transition: .3s ease-out;
+    display: inline-block;
+}
+
+.contact-links:hover{
+   transform: translateY(8px);
+}
+
 /* Responsive design for mobile  */
 @media(max-width: 375px){
     .nav-bar>.nav-menu{
